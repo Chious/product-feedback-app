@@ -8,7 +8,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import { IoChevronDown, IoChevronUp, IoCheckmark } from "react-icons/io5";
 
-export default function SortButton({ ...props }: React.ComponentProps<"div">) {
+export default function SortButton({ ...props }: any) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
