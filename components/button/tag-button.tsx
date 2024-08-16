@@ -14,7 +14,7 @@ export default function TagButton({
 }: TagButtonProps) {
   const [isSelected, setIsSelected] = useState(false);
   const classes = clsx(
-    "  p-2 rounded-md hover:bg-blue/50 hover:text-white transition-all duration-200 w-fit",
+    " h-fit p-2 rounded-md hover:bg-blue/50 hover:text-white transition-all duration-200 w-fit",
     isSelected ? "bg-blue text-white" : "bg-gray text-blue"
   );
 

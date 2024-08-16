@@ -4,13 +4,13 @@ import { ComponentProps } from "react";
 
 export type ButtonProps = ComponentProps<"button"> & {
   variant: "purple" | "blue" | "black" | "red";
-  className: string;
+  className?: string;
   disabled?: boolean;
 };
 
 export default function Button({ variant, disabled, ...props }: ButtonProps) {
   let buttonClass = clsx(
-    "p-4 text-white rounded-md transition-all duration-200",
+    "p-2 text-white rounded-md transition-all duration-200 h-fit",
     variant === "purple" && "bg-purple hover:opacity-50",
     variant === "blue" && "bg-blue hover:opacity-50",
     variant === "black" && "bg-black hover:opacity-50",

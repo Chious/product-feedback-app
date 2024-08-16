@@ -8,7 +8,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import { IoChevronDown, IoChevronUp, IoCheckmark } from "react-icons/io5";
 
-export default function SortButton() {
+export default function SortButton({ ...props }: React.ComponentProps<"div">) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -22,7 +22,7 @@ export default function SortButton() {
   const [selectedOption, setSelectedOption] = React.useState(options[0]);
 
   return (
-    <div>
+    <div {...props}>
       <button
         onClick={handleClick}
         className="bg-gray-blue text-white rounded-md p-2 flex items-center gap-2"
