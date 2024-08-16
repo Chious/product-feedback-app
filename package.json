@@ -16,7 +16,6 @@
     "@mui/base": "^5.0.0-beta.40",
     "@mui/material": "^5.16.7",
     "@mui/system": "^5.16.7",
-    "@next/swc-darwin-arm64": "^14.2.5",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.24",
     "next": "14.2.5",
